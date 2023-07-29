@@ -36,9 +36,9 @@ Suppose you have a file named "export.json" that needs to be synchronized betwee
 
 ### How to Use
 
-1. Save the script to a Python file (e.g., "file_watcher.py") in the same directory as the "export.json" file you want to synchronize.
+1. Save the script to a Python file (e.g., "file_watcher.py"). Set the variable directory_to_listen to the path of the directory (e.g. "./downloads/") and set the filemane_to_listen to the name of the file you want to synchronize (e.g., "export.json").
 
-2. Open a terminal or command prompt and navigate to the directory where the script and "export.json" are located.
+2. Open a terminal or command prompt and navigate to the directory where the script is save.
 
 3. Run the script using the following command:
 
@@ -46,7 +46,7 @@ Suppose you have a file named "export.json" that needs to be synchronized betwee
    python file_watcher.py
    ```
 
-4. The script will start watching for changes in the current directory. Whenever "export.json" is modified, it will automatically synchronize the updated file with the corresponding file in the specified WSL directory.
+4. The script will start watching for changes in the directory_to_listen. Whenever "export.json" is modified, it will automatically synchronize the updated file with the corresponding file in the specified WSL directory.
 
 5. To stop the script, press `Ctrl + C`.
 
